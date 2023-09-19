@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Bookstore</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    Hello world
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Bookstore</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      Bookstore
+    </div>
+
+    <div class="user">
+      <img class="user__avatar" src="./user-logo.png" />
+      <span class="user__name">John Doe</span>
+    </div>
+  </header>
+
+  <article>
+    <div class="search-book">
+      <input type="text" class="search-book__input" placeholder="Search books" />
+      <button class="search-book__button">Add book</button>
+    </div>
+
+    <div class="data-table">
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+          <td>
+            <button>
+              Delete
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </article>
+
+
+
+  <script src="script.js"></script>
+</body>
+
 </html>
