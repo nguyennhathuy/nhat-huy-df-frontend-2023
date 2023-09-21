@@ -3,6 +3,10 @@
 Design and develop a simple bookstore Content Management System (CMS) table that lets users view and add records. For this task, you'll need to use HTML, CSS, and JavaScript to craft a user-friendly interface for content management.
 
 ![bookstore preview](../assets/bookstore-basic.png).
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8eb1d49007d65a40acbe252a89f06315d0a45a0c
 ### **Requirements**
 
 - Set up an initial CMS table with columns for various attributes such as name, author, and topic.
@@ -14,7 +18,11 @@ Design and develop a simple bookstore Content Management System (CMS) table that
 **Assignment Deliverables**
 
 - Craft the project using **HTML, CSS,** and **JavaScript**; no need for frameworks or libraries.
+<<<<<<< HEAD
 - The project should be deployable, and a demo link must be provided for review (you can choose your own deployment platform but we put [a tutorial using Vercel](https://dwarves.notion.site/Steps-to-Deploy-Your-Assignments-Using-Vercel-cff73a5fe1024e47a4f512bbb7f93c19) to ease the step)
+=======
+- The project should be deployable, and a demo link must be provided for review (While you can select any deployment platform, we've provided a [tutorial on using Vercel](https://dwarves.notion.site/Steps-to-Deploy-Your-Assignments-Using-Vercel-cff73a5fe1024e47a4f512bbb7f93c19) to simplify the process.)
+>>>>>>> 8eb1d49007d65a40acbe252a89f06315d0a45a0c
 - **Bonus:** Store the data in the browser's [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 **What Are We Looking For?**
@@ -23,7 +31,15 @@ Design and develop a simple bookstore Content Management System (CMS) table that
 - The app should be visually appealing, but there's no need to be overkill; a minimalist design is perfectly acceptable.
 
 ### Submission
+<<<<<<< HEAD
 - Begin your work using the html, js, and css files found in the assignment folder.
 - Ensure all the assignment code resides in the `/assignment-1` directory.
 - The final submission deadline is **21/09/2023**.
 - After completing and setting up the deployable demo, open a Github issue in your forked repository titled Submission for assignment 1. Include the demo link in the description.
+=======
+
+- Begin your work using the html, js, and css files found in the assignment folder.
+- Ensure all the assignment code resides in the `/assignment-1` directory.
+- The final submission deadline is **21/09/2023**.
+- After completing and setting up the deployable demo, [open a Github issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) in your forked repository titled **Submission for assignment 1**. Include the demo link in the description.
+>>>>>>> 8eb1d49007d65a40acbe252a89f06315d0a45a0c

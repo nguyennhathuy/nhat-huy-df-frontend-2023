@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const currentBookList = JSON.parse(localStorage.getItem("bookList"));
 if (!currentBookList) {
     localStorage.setItem("bookList", JSON.stringify( [
@@ -93,3 +94,6 @@ createButton.onclick = handleAddBook
 deleteButton.onclick = handleDeleteBook
 renderDataTable(JSON.parse(localStorage.getItem("bookList")));
 
+=======
+// Your JS code goes here
+>>>>>>> 8eb1d49007d65a40acbe252a89f06315d0a45a0c
