@@ -2,106 +2,100 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Bookstore</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bookstore</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">
-      Bookstore
-    </div>
+    <header>
+        <div class="logo">
+            Bookstore
+        </div>
 
-    <div class="user">
-      <img class="user__avatar" src="./user-logo.png" />
-      <span class="user__name">John Doe</span>
-    </div>
-  </header>
+        <div class="user">
+            <img class="user__avatar" src="./user-logo.png" />
+            <span class="user__name">Nhat Huy</span>
+        </div>
+    </header>
 
-  <article>
-    <div class="search-book">
-      <input type="text" class="search-book__input" placeholder="Search books" />
-      <button class="search-book__button">Add book</button>
-    </div>
+    <article>
+        <div class="search-book">
+            <input type="text" class="search-book__input" placeholder="Search books" />
+            <button class="search-book__button">Add book</button>
+        </div>
 
-    <div class="data-table">
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
-          <td>
-            <button>
-              Delete
-            </button>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </article>
+        <div class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Topic</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                
+            </table>
+        </div>
+
+        <div class="modal-delete hide">
+            <div class="modal-delete-inner">
+                <div class="modal-delete-inner__header">
+                    <span>Delete Book</span>
+                    <img src="./close-icon.png"  />
+                </div>
+                <div class="modal-delete-inner__body">
+                    Do you want to delete Refactoring book?
+                </div>
+                <div class="modal-delete-inner__footer">
+                    <button class="delete-button">Delete</button>
+                    <button class="cancel-button">Cancel</button>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="modal-form hide">
+            <div class="modal-form-inner">
+                <div class="modal-form-inner__header">
+                    <span>Add Book</span>
+                    <img src="./close-icon.png"  />
+                </div>
+                <div class="modal-form-inner__body">
+                    <form id="form1">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name"/>
+                        </div>
+                        <div>
+                            <label>Author</label>
+                            <input type="text" name="author" id="author"/>
+                        </div>
+                        <div>
+                            <label>Topic</label>
+                            <select name="topic" id="topic">
+                                <option value="">--Please choose an option--</option>
+                                <option value="Programming">Programming</option>
+                                <option value="Database">Database</option>
+                                <option value="DevOps">DevOps</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-form-inner__footer">
+                    <button class="create-button" type="submit" form="form1">Create</button>
+                </div>
+            </div>
+        </div>
+    </article>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
