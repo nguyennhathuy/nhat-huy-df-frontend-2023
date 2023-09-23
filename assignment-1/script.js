@@ -29,6 +29,7 @@ const closeIconModalAdd = document.querySelector(".modal-form-inner__header img"
 const deleteButton = document.querySelector(".modal-delete .delete-button");
 const cancelDeleteButton = document.querySelector(".modal-delete .cancel-button");
 const clostIconModalDelete = document.querySelector(".modal-delete-inner__header img");
+const searchInput = document.querySelector(".search-book input")
 function openDeleteModal(index) {
     deleteButton.index = index;
     toggleModal(modalDelete);
@@ -38,6 +39,11 @@ function openAddModal() {
 }
 function toggleModal(modal) {
     modal.classList.toggle("hide");
+}
+function handleSearchBook(e) {
+    
+    const searchList = currentBookList.filter(item => item.name.toLowerCase().includes(e.target.value));
+    renderDataTable(searchList);
 }
 function handleAddBook(e) {
     e.preventDefault();
@@ -91,4 +97,5 @@ cancelDeleteButton.onclick = () => toggleModal(modalDelete)
 clostIconModalDelete.onclick = () => toggleModal(modalDelete)
 createButton.onclick = handleAddBook
 deleteButton.onclick = handleDeleteBook
+searchInput.oninput = handleSearchBook
 renderDataTable(JSON.parse(localStorage.getItem("bookList")));
