@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --border: #C5D0DA;
+    --bg-button: #D2445C;
+
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+
+header {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header .logo,
+header .user {
+    display: inline-block;
+}
+
+header .logo {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .user {
+    margin-right: 20px;
+    float: right;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user .user__avatar {
+    width: 25px;
+    mix-blend-mode: multiply;
+}
+
+.search-book {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.search-book .search-book__button {
+    margin-right: 20px;
+    background-color: var(--bg-button);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.search-book .search-book__input {
+    margin-right: 10px;
+    padding-left: 10px;
+    border: 2px solid var(--border);
+    border-radius: 3px;
+    width: 250px;
+}
+
+::placeholder {
+    color: var(--border);
+}
+
+.data-table {
+    display: flex;
+    justify-content: center;
+}
+
+.data-table table {
+    width: 98%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    border: 2px solid var(--border);
+    text-align: left;
+    padding: 10px;
+}
+
+.data-table td button {
+    border: none;
+    color: var(--bg-button);
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-delete {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal-delete .modal-delete-inner {
+    width: 250px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+}
+
+.modal-delete-inner .modal-delete-inner__header {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.modal-delete-inner__header img {
+    width: 20px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.modal-delete-inner .modal-delete-inner__body {
+    text-align: center;
+    padding: 15px;
+}
+
+.modal-delete-inner .modal-delete-inner__footer {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-delete-inner__footer .delete-button,
+.modal-delete-inner__footer .cancel-button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal-delete-inner__footer .cancel-button {
+    background-color: var(--bg-button);
+    color: #fff;
+}
+
+
+
+.modal-form {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.modal-form .modal-form-inner {
+    width: 300px;
+    background-color: #fff;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+}
+
+.modal-form-inner__header img {
+    width: 20px;
+    mix-blend-mode: multiply;
+    cursor: pointer;
+}
+
+.modal-form-inner .modal-form-inner__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.modal-form-inner .modal-form-inner__body {
+    padding: 5px 15px;
+}
+
+.modal-form-inner .modal-form-inner__footer {
+    padding: 0 15px 15px 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-form-inner__footer .create-button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--bg-button);
+    color: #fff;
+}
+
+.modal-form-inner__body label {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-form-inner__body div {
+    margin-bottom: 20px;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    height: 30px;
+    border: 2px solid var(--border);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 4px 8px;
+    text-decoration: none;
+    border: 2px solid var(--border);
+    margin: 0 5px;
+}
+
+.pagination a.active {
+    background-color: #E3E8EC;
+    color: black;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
