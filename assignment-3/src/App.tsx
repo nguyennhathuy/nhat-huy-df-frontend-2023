@@ -15,9 +15,8 @@ function App() {
   useEffect(() => {
     if (!localStorage.getItem("bookList")) {
       localStorage.setItem("bookList", JSON.stringify(DUMMY_BOOK))
-    } else {
-      setBookList(JSON.parse(localStorage.getItem("bookList") || "[]"))
     }
+    setBookList(JSON.parse(localStorage.getItem("bookList") || "[]"))
   }, []);
   function handleToggleModal(type: string, id?: string): void {
     switch(type) {
